@@ -1,0 +1,24 @@
+
+html, body {
+    height: 100%;
+    margin: 0 auto;
+    background-color: rgb(41, 58, 74);
+    font-family: 'Times New Roman', Times, serif;
+}
+main {
+    display: grid;
+    place-items: center;
+    height: 100%;
+}
+form {
+    background-color: aliceblue;
+    text-align: center;
+    width: 75%;
+    padding: 10px;
+}
+button{
+    width: 100%;
+    margin-top: 10px;
+} 
+
+

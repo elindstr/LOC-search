@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="data:,">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <title>Search the LOC</title>
+
+  </head>
+  <body>
+
+    <main>
+      <form class="text-center">
+        <h1>Search the Library of Congress</h1>
+
+        <div class="form-floating mb-3" >
+          <input type="text" class="form-control"  placeholder="search" id="searchQuery">
+          <label for="searchQuery">Query</label>
+        </div>
+
+        <select class="form-select" aria-label="Default select example">
+          <option selected id="mediaType">Select format</option>
+          <option value="audio">Audio Recordings</option>
+          <option value="books">Books/Printed Material</option>
+          <option value="film-and-videos">Film, Videos</option>
+          <option value="legislation">Legislation</option>
+          <option value="manuscripts">Mixed Material</option>
+          <option value="maps">Maps</option>
+          <option value="newspapers">Newspapers</option>
+          <option value="photos">Photo, Print, Drawing</option>
+          <option value="notated-music">Printed Music</option>
+          <option value="web-archives">Web Archives</option>
+        </select>
+
+        <button type="submit" class="btn btn-primary">Search</button>
+        </div>
+      </form>
+    </main>
+    
+    <!--scripts-->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
