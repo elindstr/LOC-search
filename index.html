@@ -13,17 +13,17 @@
   </head>
   <body>
 
-    <main>
+    <main class="main-index">
       <form class="text-center">
         <h1>Search the Library of Congress</h1>
 
         <div class="form-floating mb-3" >
           <input type="text" class="form-control"  placeholder="search" id="searchQuery">
-          <label for="searchQuery">Query</label>
+          <label for="searchQuery">Search</label>
         </div>
 
         <select class="form-select" aria-label="Default select example">
-          <option selected id="mediaType">Select format</option>
+          <option selected id="mediaType">Any Format</option>
           <option value="audio">Audio Recordings</option>
           <option value="books">Books/Printed Material</option>
           <option value="film-and-videos">Film, Videos</option>
@@ -36,7 +36,7 @@
           <option value="web-archives">Web Archives</option>
         </select>
 
-        <button type="submit" class="btn btn-primary">Search</button>
+        <button type="submit" class="btn btn-primary" id="searchButton">Search</button>
         </div>
       </form>
     </main>

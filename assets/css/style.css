@@ -1,24 +1,41 @@
 
 html, body {
     height: 100%;
-    margin: 0 auto;
+    margin: 5px auto;
     background-color: rgb(41, 58, 74);
     font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
 }
-main {
+.main-index {
     display: grid;
     place-items: center;
     height: 100%;
 }
+main header{
+    color: white;
+    font-size: 1.5em;
+}
+.main-search {
+    display: flex;
+    flex-direction: column;
+}
+aside {
+}
 form {
     background-color: aliceblue;
     text-align: center;
-    width: 75%;
     padding: 10px;
 }
-button{
+form button {
     width: 100%;
     margin-top: 10px;
 } 
-
+article {
+}
+section {
+    background: aliceblue;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    padding: 10px;    
+}
 
