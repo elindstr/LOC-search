@@ -75,9 +75,11 @@ function renderResults(data) {
             let resultsLength = data.results.length
             let ofCount = data.pagination.of
             console.log(ofCount)
+            let begincount = data.pagination.from
+            let endcount = data.pagination.to
 
-            let resultsLengthMsg = `Showing ${resultsLength} of ${ofCount.toLocaleString()} results:`
-            resultsLength === 1? resultsLengthMsg `Showing ${resultsLength} of ${ofCount} result:`: null   
+            let resultsLengthMsg = `Showing ${begincount}-${endcount} of ${ofCount.toLocaleString()} results:`
+            resultsLength === 1? resultsLengthMsg `Showing ${begincount}-${endcount} of ${ofCount} result:`: null   
             $("main header").append("<h2>")
                 .text(resultsLengthMsg) 
 
@@ -161,7 +163,7 @@ $("body").on("click", "button .next", function () {
         })
 })
 
-$("body").on("click", "button .next", function () {
+$("body").on("click", "button.next", function () {
     url = $(this).attr("id")
     console.log("click", url)
 
@@ -177,6 +179,10 @@ $("body").on("click", "button .next", function () {
         .then(function (data) {
             console.log(data)
             renderResults(data)
+            window.scrollTo({
+                top: 0, // Scroll to the top of the window
+                behavior: 'smooth' // Smoothly scroll
+            });
         })
         .catch(function (error) {
             console.log(error)
